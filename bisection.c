@@ -6,12 +6,12 @@
 
 double f(double x)
 {
-	return 4.5 * x - 2 * cos(x);  
+	return 4.5 * x - 2 * cos(x); //You can write the desired function here.
 }
 
 double bisection(double a, double b)
 {
-	double tolarance = 10e-6;   //margin of error of the found root
+	double tolarance = 10e-12;   //margin of error of the found root
 	int    MaxIteration = 1000;
 	int    count = 0;
 	
@@ -49,6 +49,8 @@ double bisection(double a, double b)
 int main()
 {
 	// Initial interval [a, b]
+    // The initial points vary according to the function.
+    
 	double a = 0.0;
 	double b = 1.0; 
 	double root = bisection(a, b);
@@ -63,5 +65,5 @@ int main()
 		printf("No Root Found in the Specified Range");
 	}
 	
-	getchar(); // Wait for a key press
+	getch(); // Wait for a key press
 } 
