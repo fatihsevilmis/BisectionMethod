@@ -49,14 +49,13 @@ double bisection(double a, double b)
 int main()
 {
 	// Initial interval [a, b]
-    // The initial points vary according to the function.
+       // The initial points vary according to the function.
     
 	double a = 0.0;
 	double b = 1.0; 
 	double root = bisection(a, b);
 	if(root != 0)
 	{
-		
 		printf("Root of the equation: %f", root);
 	}
 	
