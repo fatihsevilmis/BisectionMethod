@@ -11,7 +11,7 @@ double f(double x)
 
 double bisection(double a, double b)
 {
-	double tolarance = 10e-12;   //margin of error of the found root
+	double tolarance = 10e-12;   
 	int    MaxIteration = 1000;
 	int    count = 0;
 	
@@ -64,5 +64,5 @@ int main()
 		printf("No Root Found in the Specified Range");
 	}
 	
-	getch(); // Wait for a key press
+	getch(); 
 } 
