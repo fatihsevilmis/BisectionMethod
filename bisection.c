@@ -54,7 +54,7 @@ int main()
 	double a = 0.0;
 	double b = 1.0; 
 	double root = bisection(a, b);
-	if(root != 0)
+	if(root)
 	{
 		
 		printf("Root of the equation: %f", root);
