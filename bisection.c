@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>  
 
-#define f(x) (4.5*(x) - 2*cos(x))
+#define f(x) (4.5*(x) - 2*cos(x))      
 
 double bisection(double a, double b)
 {
@@ -51,13 +51,8 @@ int main()
 	double b = 1.0; 
 	double root = bisection(a, b);
 	if(root)
-	{
-<<<<<<< HEAD
-		
+	{	
 		printf("Root of the equation: %f\n", root);
-=======
-		printf("Root of the equation: %f", root);
->>>>>>> 22e35a35c387273c33a18fb66196c983cd5a042e
 	}
 	
 	else
@@ -65,10 +60,6 @@ int main()
 		printf("No Root Found in the Specified Range\n");
 	}
 	
-<<<<<<< HEAD
 	getchar(); // Wait for a key press
-} 
-=======
-	getch(); 
-} 
->>>>>>> 22e35a35c387273c33a18fb66196c983cd5a042e
+}
+
