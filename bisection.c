@@ -1,13 +1,9 @@
 // Bisection Method
 
 #include <stdio.h>
-#include <conio.h>
-#include <math.h>
+#include <math.h>  
 
-double f(double x)
-{
-	return 4.5 * x - 2 * cos(x); //You can write the desired function here.
-}
+#define f(x) (4.5*(x) - 2*cos(x))
 
 double bisection(double a, double b)
 {
@@ -43,7 +39,7 @@ double bisection(double a, double b)
 		++count;											
 	}
 	printf("Number of Iterations: %d\n",count);
-	return (a+b) / 2;	
+	return  (a+b) / 2;	
 }
 
 int main()
@@ -57,13 +53,14 @@ int main()
 	if(root)
 	{
 		
-		printf("Root of the equation: %f", root);
+		printf("Root of the equation: %f\n", root);
 	}
 	
 	else
 	{
-		printf("No Root Found in the Specified Range");
+		printf("No Root Found in the Specified Range\n");
 	}
 	
-	getch(); // Wait for a key press
+	
+	getchar(); // Wait for a key press
 } 
