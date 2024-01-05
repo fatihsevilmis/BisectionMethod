@@ -61,6 +61,5 @@ int main()
 		printf("No Root Found in the Specified Range\n");
 	}
 	
-	
 	getchar(); // Wait for a key press
 } 
